@@ -7,7 +7,15 @@
    */
   var ngModule = angular.module('eha.counter.directive', [])
 
-  ngModule.directive('ehaCounter', function () {
+  ngModule.provider('ehaCounter', function () {
+    this.increment = angular.noop
+    this.decrement = angular.noop
+    this.$get = function () {
+      return this
+    }
+  })
+
+  ngModule.directive('ehaCounter', function (ehaCounter) {
     return {
       restrict: 'E',
       templateUrl: function (element, attrs) {
@@ -27,11 +35,15 @@
           return (isNaN(value) || value === '' || value < 1)
         }
         scope.incrementTouch = function (count) {
-          return isInvalid(count) ? 1 : (parseInt(count, 10) + 1)
+          var res = isInvalid(count) ? 1 : (parseInt(count, 10) + 1)
+          ehaCounter.increment(res)
+          return res
         }
 
         scope.decrementTouch = function (count) {
-          return isInvalid(count) ? 0 : (parseInt(count, 10) - 1)
+          var res = isInvalid(count) ? 0 : (parseInt(count, 10) - 1)
+          ehaCounter.decrement(res)
+          return res
         }
 
         element.on('$destroy', function () {

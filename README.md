@@ -17,7 +17,11 @@ Use the `bind` attribute to bind on the current count:
 ></eha-counter>
 ```
 
-Optionally, pass in a path to a custom template:
+## Options
+
+### `template-url`
+
+A custom template can be used with the `template-url` attribute:
 
 ```html
 <eha-counter
@@ -26,11 +30,26 @@ Optionally, pass in a path to a custom template:
 ></eha-counter>
 ```
 
-The default template assumes a mobile UI and depends on [Bootstrap][] and
+Note, the default template assumes a mobile UI and depends on [Bootstrap][] and
 [font-awesome][].
 
 [bootstrap]: http://getbootstrap.com
 [font-awesome]: http://fontawesome.io
+
+### `ehaCounterProvider`
+
+Exposes the `increment` and `decrement` callbacks (both `angular.noop` by
+default), which are passed corresponding count on change. Can be overridden in
+an `angular.config` block, for example:
+
+```js
+angular.module('myApp')
+  .config(function (ehaCounterProvider) {
+    ehaCounterProvider.increment = function (count) {
+      console.log('The count is', count)
+    }
+  })
+```
 
 ## Installation
 
