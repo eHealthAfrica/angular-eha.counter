@@ -2,7 +2,8 @@
   "name": "angular-eha.counter",
   "description": "Counting directive",
   "authors": [
-    "Tom Vincent <git@tlvince.com>"
+    "Jideobi Ofomah <jideobi.ofomah@ehealthnigeria.org>",
+    "Tom Vincent <tom.vincent@ehealthnigeria.org> (https://tlvince.com)"
   ],
   "moduleType": [
     "globals",

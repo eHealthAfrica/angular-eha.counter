@@ -12,7 +12,10 @@
     "type": "git",
     "url": "https://github.com/eHealthAfrica/angular-eha.counter"
   },
-  "author": "Tom Vincent <git@tlvince.com> (https://tlvince.com/)",
+  "contributors": [
+    "Tom Vincent <tom.vincent@ehealthnigeria.org> (https://tlvince.com)",
+    "Jideobi Ofomah <jideobi.ofomah@ehealthnigeria.org>"
+  ],
   "license": "Apache-2.0",
   "keywords": [
     "counter",
