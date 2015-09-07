@@ -5,8 +5,7 @@
    * @name ehaCounter
    * @module eha.counter
    */
-  var ngModule = angular.module('eha.counter.directive', [
-  ])
+  var ngModule = angular.module('eha.counter.directive', [])
 
   ngModule.directive('ehaCounter', function () {
     return {
