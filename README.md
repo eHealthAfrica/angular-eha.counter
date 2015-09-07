@@ -9,8 +9,12 @@
 
 ## Usage
 
+Use the `bind` attribute to bind on the current count:
+
 ```html
-<eha-counter></eha-counter>
+<eha-counter
+  bind="myCtrl.count"
+></eha-counter>
 ```
 
 ## Installation
