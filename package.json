@@ -4,6 +4,7 @@
   "main": "dist/counter.template.js",
   "scripts": {
     "build": "grunt build",
+    "pretest": "standard",
     "test": "echo The grass has so little to do",
     "presemantic-release": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
