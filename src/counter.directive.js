@@ -11,7 +11,9 @@
   ngModule.directive('ehaCounter', function () {
     return {
       restrict: 'E',
-      templateUrl: 'templates/counter.template.tpl.html',
+      templateUrl: function (element, attrs) {
+        return attrs.templateUrl || 'templates/counter.template.tpl.html'
+      },
       scope: {
         count: '=bind',
         change: '=onchange',

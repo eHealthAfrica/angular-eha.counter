@@ -17,6 +17,21 @@ Use the `bind` attribute to bind on the current count:
 ></eha-counter>
 ```
 
+Optionally, pass in a path to a custom template:
+
+```html
+<eha-counter
+  bind="myCtrl.count"
+  template-url="/path/to/tpl.html"
+></eha-counter>
+```
+
+The default template assumes a mobile UI and depends on [Bootstrap][] and
+[font-awesome][].
+
+[bootstrap]: http://getbootstrap.com
+[font-awesome]: http://fontawesome.io
+
 ## Installation
 
 Install with npm:
