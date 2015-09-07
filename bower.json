@@ -1,0 +1,29 @@
+{
+  "name": "angular-eha.counter",
+  "description": "Counting directive",
+  "authors": [
+    "Tom Vincent <git@tlvince.com>"
+  ],
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "homepage": "http://docs.ehealthafrica.org/angular-eha.counter/",
+  "keywords": "counter,counting,directive,eha",
+  "main": [
+    "counter.template.js",
+    "counter.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eHealthAfrica/angular-eha.counter"
+  },
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

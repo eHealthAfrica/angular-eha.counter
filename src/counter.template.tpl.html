@@ -1,0 +1,31 @@
+<div class="input-group">
+  <span class="input-group-btn">
+    <button
+      class="btn btn-warning eha-counter-btn"
+      type="button"
+      ng-click="count = decrementTouch(count)"
+    >
+      <i class="fa fa-minus"></i>
+    </button>
+  </span>
+
+  <input
+    type="number"
+    min="0"
+    class="form-control input-lg eha-counter-input"
+    ng-change="change"
+    ng-model="count"
+    required
+  />
+
+  <span class="input-group-btn">
+    <button
+      class="btn btn-info eha-counter-btn"
+      type="button"
+      ng-click="count = incrementTouch(count)"
+    >
+      <i class="fa fa-plus"></i>
+    </button>
+  </span>
+
+</div>
