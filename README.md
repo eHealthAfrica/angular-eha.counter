@@ -7,6 +7,11 @@
 [travis-image]: https://img.shields.io/travis/eHealthAfrica/angular-eha.counter.svg
 [travis-url]: https://travis-ci.org/eHealthAfrica/angular-eha.counter
 
+A numeric counting input with increment/decrement buttons and on-change
+callbacks. Check out the [demo][].
+
+[demo]: http://docs.ehealthafrica.org/angular-eha.counter/
+
 ## Usage
 
 Use the `bind` attribute to bind on the current count:
