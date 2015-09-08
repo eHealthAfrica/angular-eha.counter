@@ -5,7 +5,7 @@
   "scripts": {
     "build": "grunt build",
     "pretest": "standard",
-    "test": "echo The grass has so little to do",
+    "test": "grunt test",
     "presemantic-release": "npm run build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "watch": "onchange src -- npm run build"
@@ -36,9 +36,15 @@
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-uglify": "^0.8.0",
     "grunt-html2js": "^0.3.0",
+    "grunt-karma": "^0.12.0",
     "grunt-ng-annotate": "^0.10.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.9",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
     "load-grunt-tasks": "^3.1.0",
     "onchange": "^2.0.0",
+    "phantomjs": "^1.9.18",
     "semantic-release": "^4.3.4",
     "standard": "^5.2.1"
   },

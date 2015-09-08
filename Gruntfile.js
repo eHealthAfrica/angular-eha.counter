@@ -91,10 +91,32 @@ module.exports = function (grunt) {
           }
         }
       }
+    },
+    karma: {
+      options: {
+        configFile: 'karma.conf.js'
+      },
+      unit: {
+        singleRun: true,
+        autoWatch: false
+      },
+      watch: {
+        singleRun: false,
+        autoWatch: true
+      }
     }
   })
 
   grunt.registerTask('template', ['html2js'])
+
+  grunt.registerTask('test', [
+    'template',
+    'karma:unit'
+  ])
+  grunt.registerTask('test:watch', [
+    'template',
+    'karma:watch'
+  ])
 
   grunt.registerTask('build', function () {
     grunt.task.run([
