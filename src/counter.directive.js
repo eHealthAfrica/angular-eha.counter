@@ -23,8 +23,7 @@
       },
       scope: {
         count: '=bind',
-        change: '=onchange',
-        name: '=name'
+        change: '=onchange'
       },
       link: function (scope, element) {
         var counterBtnList = element.find('button')

@@ -36,6 +36,20 @@ Note, the default template assumes a mobile UI and depends on [Bootstrap][] and
 [bootstrap]: http://getbootstrap.com
 [font-awesome]: http://fontawesome.io
 
+### `onchange`
+
+Evaluate the given expression when the user changes the input. Passed through
+directly to [ng-change][] on the input field in the default template.
+
+```html
+<eha-counter
+  bind="myCtrl.count"
+  onchange="myCtrl.countChange()
+></eha-counter>
+```
+
+[ng-change]: https://docs.angularjs.org/api/ng/directive/ngChange
+
 ### `ehaCounterProvider`
 
 Exposes the `increment` and `decrement` callbacks (both `angular.noop` by
